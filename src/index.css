@@ -1,0 +1,100 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --deep-blue: #242424;
+  --white: #ffffffde;
+  --black: #1a1a1a;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--white) ;
+  background-color: var(--deep-blue) ;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 2;
+}
+
+form div{
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+form input{
+  margin-bottom: 20px;
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  background-color: var(--black);
+  color: var(--white);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.task-container {
+  margin-top: 20px;
+  padding: 0 20px;
+  border: 1px solid var(--white);
+  border-radius: 15px;
+  box-shadow:
+  /* The top layer shadow */
+      0 1px 1px rgba(0,0,0,0.15),
+          /* The second layer */
+      0 10px 0 -5px #eee,
+          /* The second layer shadow */
+      0 10px 1px -4px rgba(0,0,0,0.15),
+          /* The third layer */
+      0 20px 0 -10px #eee,
+          /* The third layer shadow */
+      0 20px 1px -9px rgba(0,0,0,0.15);
+}
+
+.task-list{
+  list-style-type: none;
+  padding: 0;
+}
+.task-list-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--white);
+  margin-bottom: 10px;
+}
+.task-list-item p:first-of-type{
+  font-weight: 600;
+}
+.task-list-item p{
+  margin: 10px 0;
+}
+
+
